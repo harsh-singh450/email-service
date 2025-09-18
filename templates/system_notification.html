@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>System Notification</title>
+</head>
+<body style="border-left: 5px solid {{ severity_color | default('grey') }}; padding-left: 15px;">
+    <h2>System Notification</h2>
+    <p><strong>Severity:</strong> {{ severity | upper }}</p>
+    <p><strong>Message:</strong></p>
+    <p>{{ message }}</p>
+    <hr>
+    <p><small>Timestamp: {{ timestamp }}</small></p>
+</body>
+</html>
